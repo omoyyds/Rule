@@ -1,11 +1,7 @@
 # Custom Services
 # DOMAIN-KEYWORD,microsoft
 # DOMAIN-SUFFIX,microsoft.com
-# Movie
-DOMAIN-KEYWORD,pikpak
-DOMAIN-KEYWORD,histar
-DOMAIN-KEYWORD,hdhive
-DOMAIN-KEYWORD,netfly
+
 # Github
 DOMAIN-KEYWORD,github
 DOMAIN-SUFFIX,github.com
@@ -13,3 +9,9 @@ DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubusercontent.com
+
+# Movie
+DOMAIN-KEYWORD,pikpak
+DOMAIN-KEYWORD,histar
+DOMAIN-KEYWORD,hdhive
+DOMAIN-KEYWORD,netfly
