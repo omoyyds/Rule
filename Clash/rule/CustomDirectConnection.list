@@ -4,6 +4,7 @@
 # IP-CIDR,24.199.101.203/32,no-resolve
 
 #自建服务
+DOMAIN-SUFFIX,omoyyds.org
 DOMAIN-SUFFIX,omoyyds.cn
 DOMAIN-SUFFIX,zhouzi.me
 DOMAIN-SUFFIX,456432.xyz
