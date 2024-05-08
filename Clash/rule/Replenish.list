@@ -1,0 +1,12 @@
+# Custom Services
+# DOMAIN-KEYWORD,microsoft
+# DOMAIN-SUFFIX,microsoft.com
+
+#Web
+DOMAIN-SUFFIX,appstorrent.ru
+
+#cryptocurrency
+DOMAIN-KEYWORD,okx
+
+#AI
+DOMAIN-SUFFIX,openrouter.ai
