@@ -4,3 +4,13 @@
 
 # Emby
 DOMAIN-SUFFIX,123456.al
+
+#Web
+DOMAIN-SUFFIX,appstorrent.ru
+
+#cryptocurrency
+DOMAIN-SUFFIX,okx.com
+
+#AI
+DOMAIN-SUFFIX,openrouter.ai
+DOMAIN-SUFFIX,coze.com
