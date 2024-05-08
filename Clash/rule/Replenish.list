@@ -3,11 +3,11 @@
 # DOMAIN-SUFFIX,microsoft.com
 
 #Web
-DOMAIN-SUFFIX,appstorrent.ru
+#DOMAIN-SUFFIX,appstorrent.ru
 
 #cryptocurrency
-DOMAIN-SUFFIX,okx.com
+#DOMAIN-SUFFIX,okx.com
 
 #AI
-DOMAIN-SUFFIX,openrouter.ai
-DOMAIN-SUFFIX,coze.com
+#DOMAIN-SUFFIX,openrouter.ai
+#DOMAIN-SUFFIX,coze.com
