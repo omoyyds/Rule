@@ -2,7 +2,7 @@
 # DOMAIN-KEYWORD,omoyyds
 # DOMAIN-SUFFIX,zhouzi.me
 # IP-CIDR,24.199.101.203/32,no-resolve  跳过解析
-#IP-CIDR,24.199.101.203/32,DIRECT  进行DNS解析
+# IP-CIDR,24.199.101.203/32,DIRECT  进行DNS解析
 
 #Tunnel
 DOMAIN-SUFFIX,omoyyds.cn,DIRECT
