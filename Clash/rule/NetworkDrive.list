@@ -25,3 +25,6 @@ DOMAIN-SUFFIX,access.mypikpak.com
 
 #Terabox
 DOMAIN-KEYWORD,terabox
+
+# multcloud
+DOMAIN-KEYWORD,multcloud
