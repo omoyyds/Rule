@@ -20,8 +20,8 @@ DOMAIN-SUFFIX,storage.msn.com
 #DOMAIN-SUFFIX,aria.microsoft.com
 
 # PikPak
-# DOMAIN-KEYWORD,pikpak
-DOMAIN-SUFFIX,access.mypikpak.com
+#DOMAIN-SUFFIX,access.mypikpak.com
+DOMAIN-KEYWORD,pikpak
 
 #Terabox
 DOMAIN-KEYWORD,terabox
