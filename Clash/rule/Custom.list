@@ -2,12 +2,6 @@
 # DOMAIN-KEYWORD,microsoft
 # DOMAIN-SUFFIX,microsoft.com
 
-#自建服务
-DOMAIN-SUFFIX,omoyyds.org
-DOMAIN-SUFFIX,omoyyds.cn
-DOMAIN-SUFFIX,zhouzi.me
-DOMAIN-SUFFIX,456432.xyz
-
 # Emby
 DOMAIN-SUFFIX,123456.al
 DOMAIN-KEYWORD,sealos
