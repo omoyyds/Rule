@@ -8,3 +8,4 @@ DOMAIN-SUFFIX,omoyyds.org
 DOMAIN-SUFFIX,omoyyds.cn
 DOMAIN-SUFFIX,zhouzi.me
 DOMAIN-SUFFIX,456432.xyz
+IP-CIDR,8.210.66.138/32,no-resolve
