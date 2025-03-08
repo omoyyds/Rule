@@ -4,7 +4,7 @@
 # IP-CIDR,24.199.101.203/32,no-resolve
 
 #自建服务
-DOMAIN-SUFFIX,omoyyds.org
+DOMAIN-SUFFIX,cloud.omoyyds.org
 DOMAIN-SUFFIX,456432.xyz
 DOMAIN-SUFFIX,456478.xyz
 DOMAIN-SUFFIX,4564789.xyz
