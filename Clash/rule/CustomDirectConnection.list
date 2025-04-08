@@ -1,10 +1,16 @@
 # 直连地址
+# 域名关键词直连
 # DOMAIN-KEYWORD,omoyyds
-# DOMAIN-SUFFIX,zhouzi.me
-# IP-CIDR,24.199.101.203/32,no-resolve
+
+# 域名后缀直连
+# DOMAIN-SUFFIX,omoyyds.org
+
+# IP直连，不进行DNS解析，避免DNS污染
+# IP-CIDR,8.210.66.138/32,no-resolve
 
 #自建服务
 DOMAIN-SUFFIX,cloud.omoyyds.org
+DOMAIN-SUFFIX,works.omoyyds.org
 DOMAIN-SUFFIX,456432.xyz
 DOMAIN-SUFFIX,456478.xyz
 DOMAIN-SUFFIX,4564789.xyz
