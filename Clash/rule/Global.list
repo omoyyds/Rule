@@ -1,1 +1,6 @@
-#
+# Custom Services
+# DOMAIN-KEYWORD,microsoft
+# DOMAIN-SUFFIX,microsoft.com
+
+# NodeSeek
+DOMAIN-KEYWORD,nodeseek
