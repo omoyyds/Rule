@@ -1,178 +1,382 @@
-# ACL4SSR_Online_AdblockPlus.yaml
-# Clash Meta / Clash Party compatible override
-# Converted from user supplied ini
+# ACL4SSR Online AdblockPlus - Clash Party / Mihomo YAML override
+# Converted from ACL4SSR_Online_AdblockPlus.ini.
+# Apply this as a YAML merge override on top of a subscription containing proxies.
 
 proxy-groups:
-
-  - name: 🚀 节点选择
+  - name: "🚀 节点选择"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
       - DIRECT
 
-  - name: ♻️ 自动选择
+  - name: "♻️ 自动选择"
     type: url-test
     include-all: true
-    url: http://www.gstatic.com/generate_204
+    exclude-type: direct
+    url: "http://www.gstatic.com/generate_204"
     interval: 300
     tolerance: 50
 
-  - name: 🚁 自建节点
+  - name: "🚁 自建节点"
     type: select
     include-all: true
-    filter: "(IEPL|自建|Node|🔯 故障转移|0.20x)"
-
-  - name: 🔯 故障转移
-    type: fallback
-    include-all: true
+    exclude-type: direct
     filter: "(IEPL|自建|Node|0.20x)"
-    url: http://www.gstatic.com/generate_204
+    proxies:
+      - "🔯 故障转移"
+
+  - name: "🔯 故障转移"
+    type: url-test
+    include-all: true
+    exclude-type: direct
+    filter: "(IEPL|自建|Node|0.20x)"
+    url: "http://www.gstatic.com/generate_204"
     interval: 300
+    tolerance: 50
 
-  - name: 🌍 国外媒体
+  - name: "🌍 国外媒体"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 📢 谷歌FCM
+  - name: "📢 谷歌FCM"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 🎞️ 网络硬盘
+  - name: "🎞️ 网络硬盘"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 🤖 AI服务
+  - name: "🤖 AI服务"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 📲 电报信息
+  - name: "📲 电报信息"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: Ⓜ️ 微软服务
+  - name: "Ⓜ️ 微软服务"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 🍎 苹果服务
+  - name: "🍎 苹果服务"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
-  - name: 🎯 全球直连
+  - name: "🎯 全球直连"
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - ♻️ 自动选择
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
 
-  - name: 🛑 全球拦截
+  - name: "🛑 全球拦截"
     type: select
     proxies:
       - REJECT
       - DIRECT
 
-  - name: 🍃 应用净化
+  - name: "🍃 应用净化"
     type: select
     proxies:
       - REJECT
       - DIRECT
 
-  - name: 🆎 AdBlock
+  - name: "🆎 AdBlock"
     type: select
     proxies:
       - REJECT
       - DIRECT
 
-  - name: 🐟 漏网之鱼
+  - name: "🐟 漏网之鱼"
     type: select
+    include-all: true
+    exclude-type: direct
     proxies:
-      - 🚀 节点选择
-      - ♻️ 自动选择
-      - 🚁 自建节点
-      - 🔯 故障转移
-      - 🎯 全球直连
-
+      - "🚀 节点选择"
+      - "♻️ 自动选择"
+      - "🚁 自建节点"
+      - "🔯 故障转移"
+      - "🎯 全球直连"
 
 rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+    path: "./ruleset/LocalAreaNetwork.list"
+    interval: 86400
+
+  UnBan:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list"
+    path: "./ruleset/UnBan.list"
+    interval: 86400
 
   CustomDirectConnection:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/CustomDirectConnection.list
-    path: ./rules/CustomDirectConnection.yaml
+    format: text
+    url: "https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/CustomDirectConnection.list"
+    path: "./ruleset/CustomDirectConnection.list"
     interval: 86400
 
   BanAD:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    path: ./rules/BanAD.yaml
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list"
+    path: "./ruleset/BanAD.list"
+    interval: 86400
+
+  BanProgramAD:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list"
+    path: "./ruleset/BanProgramAD.list"
+    interval: 86400
+
+  BanEasyList:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list"
+    path: "./ruleset/BanEasyList.list"
+    interval: 86400
+
+  BanEasyListChina:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
+    path: "./ruleset/BanEasyListChina.list"
+    interval: 86400
+
+  BanEasyPrivacy:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list"
+    path: "./ruleset/BanEasyPrivacy.list"
+    interval: 86400
+
+  GoogleFCM:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list"
+    path: "./ruleset/GoogleFCM.list"
+    interval: 86400
+
+  GoogleCN:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list"
+    path: "./ruleset/GoogleCN.list"
+    interval: 86400
+
+  SteamCN:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list"
+    path: "./ruleset/SteamCN.list"
+    interval: 86400
+
+  NetworkDrive:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/NetworkDrive.list"
+    path: "./ruleset/NetworkDrive.list"
     interval: 86400
 
   OpenAI:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/omoyyds/Rule/refs/heads/main/Clash/rule/OpenAI.list
-    path: ./rules/OpenAI.yaml
+    format: text
+    url: "https://raw.githubusercontent.com/omoyyds/Rule/refs/heads/main/Clash/rule/OpenAI.list"
+    path: "./ruleset/OpenAI.list"
     interval: 86400
 
   Gemini:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list
-    path: ./rules/Gemini.yaml
+    format: text
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list"
+    path: "./ruleset/Gemini.list"
     interval: 86400
 
   Claude:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list
-    path: ./rules/Claude.yaml
+    format: text
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Claude/Claude.list"
+    path: "./ruleset/Claude.list"
     interval: 86400
 
+  Cursor:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/omoyyds/Rule/refs/heads/main/Clash/rule/Cursor.list"
+    path: "./ruleset/Cursor.list"
+    interval: 86400
+
+  Custom:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/Custom.list"
+    path: "./ruleset/Custom.list"
+    interval: 86400
+
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list"
+    path: "./ruleset/Microsoft.list"
+    interval: 86400
+
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list"
+    path: "./ruleset/Apple.list"
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list"
+    path: "./ruleset/Telegram.list"
+    interval: 86400
+
+  ProxyMedia:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+    path: "./ruleset/ProxyMedia.list"
+    interval: 86400
+
+  GitHub:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/GitHub/GitHub.list"
+    path: "./ruleset/GitHub.list"
+    interval: 86400
+
+  ProxyLite:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list"
+    path: "./ruleset/ProxyLite.list"
+    interval: 86400
+
+  ChinaDomain:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+    path: "./ruleset/ChinaDomain.list"
+    interval: 86400
+
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    format: text
+    url: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list"
+    path: "./ruleset/ChinaCompanyIp.list"
+    interval: 86400
 
 rules:
-
-  - RULE-SET,CustomDirectConnection,🎯 全球直连
-  - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,OpenAI,🤖 AI服务
-  - RULE-SET,Gemini,🤖 AI服务
-  - RULE-SET,Claude,🤖 AI服务
-  - GEOIP,CN,🎯 全球直连
-  - MATCH,🐟 漏网之鱼
+  - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
+  - "RULE-SET,UnBan,🎯 全球直连"
+  - "RULE-SET,CustomDirectConnection,🎯 全球直连"
+  - "RULE-SET,BanAD,🛑 全球拦截"
+  - "RULE-SET,BanProgramAD,🍃 应用净化"
+  - "RULE-SET,BanEasyList,🆎 AdBlock"
+  - "RULE-SET,BanEasyListChina,🆎 AdBlock"
+  - "RULE-SET,BanEasyPrivacy,🆎 AdBlock"
+  - "RULE-SET,GoogleFCM,📢 谷歌FCM"
+  - "RULE-SET,GoogleCN,🎯 全球直连"
+  - "RULE-SET,SteamCN,🎯 全球直连"
+  - "RULE-SET,NetworkDrive,🎞️ 网络硬盘"
+  - "RULE-SET,OpenAI,🤖 AI服务"
+  - "RULE-SET,Gemini,🤖 AI服务"
+  - "RULE-SET,Claude,🤖 AI服务"
+  - "RULE-SET,Cursor,🤖 AI服务"
+  - "RULE-SET,Custom,🚁 自建节点"
+  - "RULE-SET,Microsoft,Ⓜ️ 微软服务"
+  - "RULE-SET,Apple,🍎 苹果服务"
+  - "RULE-SET,Telegram,📲 电报信息"
+  - "RULE-SET,ProxyMedia,🌍 国外媒体"
+  - "RULE-SET,GitHub,🌍 国外媒体"
+  - "RULE-SET,ProxyLite,🚀 节点选择"
+  - "RULE-SET,ChinaDomain,🎯 全球直连"
+  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
+  - "GEOIP,CN,🎯 全球直连"
+  - "MATCH,🐟 漏网之鱼"
