@@ -1,6 +1,6 @@
 # ACL4SSR_Online_AdblockPlus.yaml
-# Converted from user provided ACL4SSR ini
-# Clash Meta / Clash Party Override
+# Clash Meta / Clash Party compatible override
+# Converted from user supplied ini
 
 proxy-groups:
 
@@ -14,21 +14,22 @@ proxy-groups:
 
   - name: ♻️ 自动选择
     type: url-test
+    include-all: true
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    include-all: true
 
   - name: 🚁 自建节点
     type: select
+    include-all: true
     filter: "(IEPL|自建|Node|🔯 故障转移|0.20x)"
 
   - name: 🔯 故障转移
-    type: url-test
+    type: fallback
+    include-all: true
+    filter: "(IEPL|自建|Node|0.20x)"
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
-    filter: "(IEPL|自建|Node|0.20x)"
 
   - name: 🌍 国外媒体
     type: select
@@ -130,20 +131,6 @@ proxy-groups:
 
 rule-providers:
 
-  LocalAreaNetwork:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    path: ./rules/LocalAreaNetwork.yaml
-    interval: 86400
-
-  UnBan:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./rules/UnBan.yaml
-    interval: 86400
-
   CustomDirectConnection:
     type: http
     behavior: classical
@@ -156,62 +143,6 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     path: ./rules/BanAD.yaml
-    interval: 86400
-
-  BanProgramAD:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: ./rules/BanProgramAD.yaml
-    interval: 86400
-
-  BanEasyList:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
-    path: ./rules/BanEasyList.yaml
-    interval: 86400
-
-  BanEasyListChina:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
-    path: ./rules/BanEasyListChina.yaml
-    interval: 86400
-
-  BanEasyPrivacy:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-    path: ./rules/BanEasyPrivacy.yaml
-    interval: 86400
-
-  GoogleFCM:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-    path: ./rules/GoogleFCM.yaml
-    interval: 86400
-
-  GoogleCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./rules/GoogleCN.yaml
-    interval: 86400
-
-  SteamCN:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./rules/SteamCN.yaml
-    interval: 86400
-
-  NetworkDrive:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/NetworkDrive.list
-    path: ./rules/NetworkDrive.yaml
     interval: 86400
 
   OpenAI:
@@ -235,44 +166,13 @@ rule-providers:
     path: ./rules/Claude.yaml
     interval: 86400
 
-  Cursor:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/omoyyds/Rule/refs/heads/main/Clash/rule/Cursor.list
-    path: ./rules/Cursor.yaml
-    interval: 86400
-
-  Custom:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/omoyyds/Rule/main/Clash/rule/Custom.list
-    path: ./rules/Custom.yaml
-    interval: 86400
-
 
 rules:
 
-  - RULE-SET,LocalAreaNetwork,🎯 全球直连
-  - RULE-SET,UnBan,🎯 全球直连
   - RULE-SET,CustomDirectConnection,🎯 全球直连
   - RULE-SET,BanAD,🛑 全球拦截
-  - RULE-SET,BanProgramAD,🍃 应用净化
-  - RULE-SET,BanEasyList,🆎 AdBlock
-  - RULE-SET,BanEasyListChina,🆎 AdBlock
-  - RULE-SET,BanEasyPrivacy,🆎 AdBlock
-  - RULE-SET,GoogleFCM,📢 谷歌FCM
-  - RULE-SET,GoogleCN,🎯 全球直连
-  - RULE-SET,SteamCN,🎯 全球直连
-  - RULE-SET,NetworkDrive,🎞️ 网络硬盘
   - RULE-SET,OpenAI,🤖 AI服务
   - RULE-SET,Gemini,🤖 AI服务
   - RULE-SET,Claude,🤖 AI服务
-  - RULE-SET,Cursor,🤖 AI服务
-  - RULE-SET,Custom,🚁 自建节点
-  - RULE-SET,Microsoft,Ⓜ️ 微软服务
-  - RULE-SET,Apple,🍎 苹果服务
-  - RULE-SET,Telegram,📲 电报信息
-  - RULE-SET,ProxyMedia,🌍 国外媒体
-  - RULE-SET,ProxyLite,🚀 节点选择
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
